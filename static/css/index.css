@@ -142,7 +142,7 @@ body {
 }
 
 .publication-header .hero-body {
-  padding: 6rem 1.5rem 4rem;
+  padding: 4rem 1.5rem 2rem;
 }
 
 .publication-authors {
@@ -753,5 +753,15 @@ a:focus {
   width: 100%; 
   height: auto; 
   max-height: 600px;
+}
+
+.institution-logo {
+  height: 1.25em; 
+  width: auto;    
+  vertical-align: middle;
+}
+
+section.hero:first-of-type .hero-body {
+  padding-bottom: 0rem;
 }
 

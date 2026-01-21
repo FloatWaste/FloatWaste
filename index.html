@@ -81,22 +81,12 @@
               <h1 class="title is-1 publication-title">FloatWaste: A Multi-Regional Floating Debris Detection Dataset
                 for Smart Cities
               </h1>
-              <div class="is-size-5 publication-authors">
-                <!-- TODO: Replace with your paper authors and their personal links -->
-                <span class="author-block">
-                  <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                </span>
-              </div>
 
-              <div class="is-size-5 publication-authors">
-                <!-- TODO: Replace with your institution and conference/journal info -->
-                <span class="author-block">Institution Name</span>
-                <!-- TODO: Remove this line if no equal contribution -->
-                <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+              <div class="is-size-4 publication-authors is-flex is-justify-content-center">
+                <div class="author-block is-flex is-align-items-center">
+                  <img src="static/images/logo.jpg" alt="CSIRO Logo" class="institution-logo mr-2" />
+                  <span>CSIRO Team (Hobart)</span>
+                </div>
               </div>
 
             </div>
@@ -110,13 +100,26 @@
     <section class="hero is-small">
       <div class="hero-body">
         <div class="container">
-          <!-- Paper video. -->
-          <h2 class="title is-3">Dataset Overview</h2>
-          <div class="columns is-centered has-text-centered">
+          <!-- <h2 class="title is-3">Dataset Overview</h2> -->
+          <div class="columns is-centered has-text-centered has-text-justified">
             <div class="column is-four-fifths">
+              <p>
+                <img src="./static/images/banner.png" alt="Directional Weight Score"
+                  class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy">
+              </p>
               <p>
                 <img src="./static/images/do.png" alt="Directional Weight Score"
                   class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy">
+              </p>
+              <p>
+                Our aquatic litter dataset consists of a total of 7,906 images collected from three distinct
+                geographical regions, covering 25 litter categories and 11 different litter materials. All images are
+                manually annotated, resulting in 27,583 bounding boxes in total.
+                Figures present detailed statistical analyses of the dataset: (a) the distribution of images across
+                different regions; (b) the histogram of the number of bounding boxes per image; (c) the distribution of
+                bounding boxes across different litter categories; (d) the distribution of bounding boxes among
+                different litter materials; and (e) the distribution of images for each litter category under different
+                litter materials.
               </p>
             </div>
           </div>
@@ -134,14 +137,21 @@
             <div class="content has-text-justified">
               <!-- TODO: Replace with your paper abstract -->
               <p>
-                Plastic pollution entering into waterways and oceans poses significant threats to ecological systems and
-                human health. Current methods of assessing marine debris are labor-intensive, time-consuming, and
-                heavily reliant on manual image analysis. To address these challenges, we propose an Artificial
-                Intelligence-assisted Floating Litter Detection (AIFLD) system designed to automate debris
-                identification. By integrating cameras with object detection algorithms, our system can accurately
-                detect and classify different types of marine litter. Our approach enables waste managers and
-                policymakers to efficiently identify litter hotspots, supporting the development of more targeted,
-                cost-effective, and sustainable waste management strategies.
+                Plastic pollution in oceans poses substantial threats to human health, economic development, and marine
+                biodiversity, with rivers serving as the principal transport pathway for inland waste. While
+                camera-based AI monitoring offers a scalable alternative to labor-intensive manual surveys, existing
+                computer vision datasets fail to capture the complex visual conditions of real-world riverine
+                environments leaving floating waste detection critically underexplored. To rectify this, we introduce
+                FloatWaste, the first comprehensive, multi-region dataset for floating riverine waste detection,
+                comprising 27,583 expert-annotated bounding boxes across 25 fine-grained waste categories spanning 11
+                material types, collected from diverse aquatic settings worldwide. Each annotation was validated through
+                cross-verification by environmental scientists and local domain experts to ensure label accuracy.
+                Extensive evaluation of representative vision models reveals critical challenges: detecting small and
+                partially submerged objects under glare and clutter, maintaining robust performance under cross-domain
+                distribution shifts, handling severe occlusion and other complexities. Beyond advancing computer vision
+                research, FloatWaste directly enables real-world applications including automated upstream waste
+                interception systems and waterway cleanliness monitoring, facilitating effective waste management before
+                debris reaches the ocean.
               </p>
             </div>
           </div>
@@ -150,42 +160,32 @@
     </section>
     <!-- End paper abstract -->
 
-
     <!-- Cameras installation -->
     <section class="hero is-small">
       <div class="hero-body">
         <div class="container">
           <h2 class="title is-3">Cameras installation</h2>
-          <div id="results-carousel" class="carousel results-carousel">
-            <div class="item">
-              <!-- TODO: Replace with your research result images -->
-              <img src="static/images/f3.png" alt="First research result visualization" loading="lazy" class="fixed-size-img"/>
-              <!-- TODO: Replace with description of this result -->
-              <h2 class="subtitle has-text-centered">
-                The map of the camera's placement distribution for Phase 1 monitoring activity, illustrating the river's
-                length from block A to block B, which is approximately 6.3 km. This visual representation helps to
+          <div class="columns is-centered has-text-justified">
+            <div class="column is-four-fifths">
+              <p>
+                <img src="./static/images/ci.png" alt="Directional Weight Score"
+                  class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy">
+              </p>
+              <p>
+                The map of the camera's placement distribution for Phase 1 monitoring activity, illustrating the
+                river's length from block A to block B, which is approximately 6.3 km. This visual representation helps
+                to
                 understand the extensive coverage of the monitoring system along the river, ensuring that each section
-                is adequately observed and managed.
-              </h2>
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/f4.png" alt="Second research result visualization" loading="lazy" class="fixed-size-img"/>
-              <h2 class="subtitle has-text-centered">
-                Block A is situated in the eastern part of Bandung, specifically around the Citarik River. Six cameras
+                is adequately observed and managed.Block A is situated in the eastern part of Bandung, specifically
+                around the Citarik River. Six cameras
                 were installed, positioned at the lower reaches of the Cikijing River (Cam-1), the Cimande River
-                (Cam-2), the Citarik River(Cam 3), and at the confluence of the Cimande and Cikijing (Cam-4), and lastly
-                the confluence of Citarik, Cimande, Cikijing Rivers (Cam-Opt & Cam-5).
-              </h2>
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/f5.png" alt="Third research result visualization" loading="lazy" class="fixed-size-img"/>
-              <h2 class="subtitle has-text-centered">
-                Block B covers the Citarik, the main Citarum River, and the Cikeruh River. Four cameras were installed
+                (Cam-2), the Citarik River(Cam 3), and at the confluence of the Cimande and Cikijing (Cam-4), and
+                lastly the confluence of Citarik, Cimande, Cikijing Rivers (Cam-Opt & Cam-5). Block B covers the
+                Citarik, the main Citarum River, and the Cikeruh River. Four cameras were installed
                 in Sapan, located in the central basin of Bandung, specifically at the lower reaches of the Citarik
                 (Cam-6 & Cam-7), the main Citarum (Cam-8), and the Cikeruh (Cam-9).
-              </h2>
+
+              </p>
             </div>
           </div>
         </div>
@@ -193,39 +193,110 @@
     </section>
     <!-- End Cameras installation -->
 
-
-
-
-
-
-
-    <!-- Video carousel -->
-    <!-- <section class="hero is-small">
+    <!-- Detection -->
+    <section class="hero is-small">
       <div class="hero-body">
         <div class="container">
-          <h2 class="title is-3">Another Carousel</h2>
-          <div id="results-carousel" class="carousel results-carousel">
-            <div class="item item-video1">
-              <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-                <source src="static/videos/carousel1.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-video2">
-              <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-                <source src="static/videos/carousel2.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="item item-video3">
-              <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-                <source src="static/videos/carousel3.mp4" type="video/mp4">
-              </video>
+          <h2 class="title is-3">Detection</h2>
+          <div class="columns is-centered has-text-justified">
+            <div class="column is-four-fifths">
+              <h2 class="title is-5 has-text-centered">Challenge 1 : Small Objects</h2>
+              <p>
+                <img src="./static/images/xmb.png" alt="Directional Weight Score"
+                  class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy">
+              </p>
+              <p>
+                A major challenge in floating litter detection lies in the prevalence of extremely small objects. Many
+                debris instances occupy only a tiny fraction of the image, often suffering from low resolution, motion
+                blur, and background clutter caused by water reflections and waves. Such small-scale targets provide
+                very limited visual cues, making them difficult to distinguish even for state-of-the-art large
+                vision-language models. In practice, we observe that powerful models such as InternVL2.5-13B still
+                struggle to reliably perceive and localize these small litter instances, frequently missing them or
+                confusing them with background noise. This highlights the fundamental difficulty of small-object
+                perception in real-world marine environments.
+              </p>
+              <br></br>
+
+              <h2 class="title is-5 has-text-centered">Challenge 2 : Dense Object</h2>
+              <p>
+                <img src="./static/images/cmmb.png" alt="Directional Weight Score"
+                  class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy">
+              </p>
+              <p>
+                Beyond small objects, highly dense litter distributions pose another critical challenge for garbage
+                detection. In real-world water surfaces, a large number of debris instances often appear in close
+                proximity, leading to severe occlusion, overlapping boundaries, and indistinguishable visual cues. Such
+                dense scenes substantially degrade detection performance. Our empirical observations show that even
+                strong detectors and vision–language models, including DINO, InternVL2.5, and Qwen2.5VL-72B, struggle to
+                handle these scenarios effectively, suffering from frequent false positives and missed detections under
+                high-density conditions.
+              </p>
+              <br></br>
+
+              <h2 class="title is-5 has-text-centered">Challenge 3 : Specular Reflection</h2>
+              <p>
+                <img src="./static/images/sfg.png" alt="Directional Weight Score"
+                  class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy">
+              </p>
+              <p>
+                In aquatic environments, strong surface reflections introduce severe visual interference for garbage
+                detection. Specular highlights and mirror-like reflections distort object appearance, obscure true
+                boundaries, and confuse spatial cues, making it difficult for models to accurately localize debris. More
+                critically, reflections of surrounding objects are often mistakenly recognized as litter, leading to
+                false detections. This reflection-induced ambiguity significantly degrades detection robustness and
+                poses a major challenge for reliable real-world deployment.
+              </p>
+              <br></br>
+
+              <h2 class="title is-5 has-text-centered">Challenge 4 : Blurred Objects</h2>
+              <p>
+                <img src="./static/images/sfg.png" alt="Directional Weight Score"
+                  class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy">
+              </p>
+              <p>
+                Blurred garbage objects pose a significant challenge to reliable detection. Due to motion blur, defocus,
+                or low image quality, garbage instances often lack clear visual cues, which can easily mislead detection
+                models into classifying them as background or failing to perceive their presence altogether. This
+                ambiguity substantially increases the risk of missed detections and false predictions, thereby degrading
+                the robustness of garbage detection systems.
+              </p>
+              <br></br>
+
+              <h2 class="title is-5 has-text-centered">Challenge 5 : Background Interference</h2>
+              <p>
+                <img src="./static/images/yhx.png" alt="Directional Weight Score"
+                  class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy">
+              </p>
+              <p>
+                Background clutter and visual similarity between garbage and its surrounding environment pose
+                significant challenges to accurate detection. In particular, when garbage objects share similar color,
+                texture, or appearance with the background (e.g., garbage floating on water surfaces), detection models
+                are easily confused and tend to misclassify garbage as background. Even powerful foundation models such
+                as DINO and Florence struggle to reliably distinguish garbage targets under such high background–object
+                similarity, leading to increased false negatives and degraded detection performance.
+              </p>
+              <br></br>
+
+              <h2 class="title is-5 has-text-centered">Challenge 6 : Geographical Diversity</h2>
+              <p>
+                <img src="./static/images/yhx.png" alt="Directional Weight Score"
+                  class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy">
+              </p>
+              <p>
+                Geographical diversity introduces substantial variability in garbage detection. Our dataset spans three
+                distinct regions—Hobart, New South Wales, and Indonesia—where garbage types, appearance, and spatial
+                distributions differ significantly. Such cross-region heterogeneity poses higher demands on model
+                robustness and generalization, as detection models must adapt to diverse environmental conditions and
+                unseen regional characteristics.
+              </p>
+              <br></br>
+
             </div>
           </div>
         </div>
       </div>
-    </section> -->
-    <!-- End video carousel -->
-
+    </section>
+    <!-- End Detection -->
 
 
 
